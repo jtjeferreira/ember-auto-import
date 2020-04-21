@@ -17,7 +17,7 @@ case "$EAI_SCENARIO" in
 esac
 
 if [ -z "$version" ]; then
-  yarn;
+  yarn --frozen-lockfile;
 else
 
   # add the new ember-cli version to ember-auto-import. This will not get
